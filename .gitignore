@@ -1,0 +1,24 @@
+# Virtual environments
+.venv/
+.venv-1/
+.venv-2/
+.venv-3/
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Outputs and archives (regenerable)
+outputs/
+archive.zip
+
+# PowerPoint build artifacts
+ppt/slides/node_modules/
+ppt/slides/output/
+ppt/slides/output/render/
+
+# OS files
+Thumbs.db
+.DS_Store

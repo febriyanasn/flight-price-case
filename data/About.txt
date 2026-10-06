@@ -1,0 +1,29 @@
+Overview of the Project: Flight Price EDA and Prediction
+Flight ticket prices are highly volatile and dynamic, heavily influenced by various factors such as airline brand, flight duration, number of stops, source, and destination. The primary objective of this project is to uncover the underlying patterns in flight pricing through comprehensive Exploratory Data Analysis (EDA) and to build a robust machine learning model capable of accurately predicting future flight fares.
+In this project, we dive deep into the data to clean, preprocess, and visualize the hidden relationships between features. After applying advanced feature engineering and transforming categorical data, we trained multiple regression models. Our final optimized predictive model achieved an outstanding R² score of 98.5%, demonstrating exceptional accuracy in forecasting flight prices.
+
+Key Highlights & Objectives
+Data Wrangling: Handled missing values, parsed complex date/time features, and cleaned the raw dataset for modeling.
+Exploratory Data: Analysis (EDA): Visualized price distributions across different airlines, times of day, and routes to extract actionable business insights.
+Feature Engineering: Employed encoding techniques for categorical variables and created new meaningful features from existing time data.
+Predictive Modeling: Trained, evaluated, and tuned regression algorithms (e.g., Random Forest) to achieve a near-perfect R² score.
+
+What will we observe?
+a) Does price vary with Airlines?
+b) Does ticket price change based on the departure time and arrival time?
+c) Is the price changes with change in Source and Destination?
+d) Is the price affected when tickets are bought in just 1 or 2 days before departure?
+
+Data Features
+The various features of the cleaned dataset are explained below:
+1) Airline: The name of the airline company is stored in the airline column. It is a categorical feature having 6 different airlines.
+2) Flight: Flight stores information regarding the plane's flight code. It is a categorical feature.
+3) Source City: City from which the flight takes off. It is a categorical feature having 6 unique cities.
+4) Departure Time: This is a derived categorical feature obtained created by grouping time periods into bins. It stores information about the departure time and have 6 unique time labels.
+5) Stops: A categorical feature with 3 distinct values that stores the number of stops between the source and destination cities.
+6) Arrival Time: This is a derived categorical feature created by grouping time intervals into bins. It has six distinct time labels and keeps information about the arrival time.
+7) Destination City: City where the flight will land. It is a categorical feature having 6 unique cities.
+8) Class: A categorical feature that contains information on seat class; it has two distinct values: Business and Economy.
+9) Duration: A continuous feature that displays the overall amount of time it takes to travel between cities in hours.
+10)Days Left: This is a derived characteristic that is calculated by subtracting the trip date by the booking date.
+11) Price: Target variable stores information of the ticket price.
